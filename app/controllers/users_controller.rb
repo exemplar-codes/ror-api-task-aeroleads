@@ -14,8 +14,8 @@ class UsersController < ApplicationController
 
     begin
       @user.save!
-    rescue
-      render json: { message: 'Some field is invalid'}
+    rescue ActiveRecord::RecordInvalid => e
+      render json: { error: e}
     end
   end
 end
