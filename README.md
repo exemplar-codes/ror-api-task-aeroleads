@@ -7,3 +7,9 @@ User model - `{ first_name, last_name, company }`, all `String` `NOT NULL`
 GET `/users` - returns array of users
 
 POST `/users` (JSON {first_name, last_name, company}) - returns 200 if OK, else validation error.
+
+### Instructions
+1. Download repo
+2. Run - `bundle`
+3. Start server - `rails s`
+4. Make requests using Postman etc.
