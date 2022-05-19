@@ -12,4 +12,4 @@ POST `/users` (JSON {first_name, last_name, company}) - returns 200 if OK, else 
 1. Download repo
 2. Run - `bundle`
 3. Start server - `rails s`
-4. Make requests using Postman etc.
+4. Make requests at `http://localhost:3000/users/` using Postman etc.
