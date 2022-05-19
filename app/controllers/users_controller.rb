@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     @user.last_name = params[:last_name]
     @user.company = params[:company]
 
-    @user.save!
+    begin
+      @user.save!
+    rescue
+      render json: { message: 'Some field is invalid'}
+    end
   end
 end
