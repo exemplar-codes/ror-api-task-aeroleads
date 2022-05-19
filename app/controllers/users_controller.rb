@@ -1,10 +1,17 @@
 class UsersController < ApplicationController
   protect_from_forgery with: :null_session # avoid CSRF check
 
-  def new
+  def index
+    render json: { users: User.all }
   end
 
   def create
-    render json: {mesg: "Posted successfully"}, status: :forbidden
+    @user = User.new
+
+    @user.first_name = params[:first_name]
+    @user.last_name = params[:last_name]
+    @user.company = params[:company]
+
+    @users.save
   end
 end
