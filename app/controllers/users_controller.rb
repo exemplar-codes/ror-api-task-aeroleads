@@ -12,6 +12,6 @@ class UsersController < ApplicationController
     @user.last_name = params[:last_name]
     @user.company = params[:company]
 
-    @users.save
+    @user.save!
   end
 end
