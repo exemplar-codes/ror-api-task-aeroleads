@@ -3,5 +3,7 @@ Write a restful API in RoR so I can upload data to the server. Say if the data i
 
 ### Solution
 User model - {first_name, last_name, company}, all String NOT NULL
+
 GET `users` - returns array of users
+
 POST `users` (JSON {first_name, last_name, company}) - returns 200 if OK, else validation error.
