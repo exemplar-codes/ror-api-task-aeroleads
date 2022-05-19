@@ -135,6 +135,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-cors (1.0.6)
+      rack (>= 1.6.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.3)
@@ -218,6 +220,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.3)
   redis (~> 4.0)
   selenium-webdriver
